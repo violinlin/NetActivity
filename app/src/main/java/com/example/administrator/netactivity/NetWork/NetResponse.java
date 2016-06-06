@@ -5,9 +5,6 @@ import android.text.TextUtils;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-/**
- * Created by lizeng on 16/2/17.
- */
 public class NetResponse {
 
     /**

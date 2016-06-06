@@ -17,9 +17,6 @@ import java.util.Map;
 
 
 
-/**
- * Created by lizeng on 15/12/25.
- */
 public class VolleyControl {
 
     private static VolleyControl volleyControl;

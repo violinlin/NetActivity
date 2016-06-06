@@ -9,9 +9,6 @@ import java.net.URLEncoder;
  */
 public class ParamControl {
 
-    /**
-     * 参数类别
-     */
     public enum ParamType {
         JSON, XML, MAP, NULL
     }

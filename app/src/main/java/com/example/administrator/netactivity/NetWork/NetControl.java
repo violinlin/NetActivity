@@ -2,9 +2,7 @@ package com.example.administrator.netactivity.NetWork;
 
 import android.util.Log;
 
-/**
- * Created by lizeng on 15/12/25.
- */
+
 public class NetControl {
 
     private NetRequest netRequest;
@@ -16,8 +14,8 @@ public class NetControl {
     }
 
     public void start() {
-        Log.w("lz1", netRequest.url);
-        Log.w("lz1", "param=" + netRequest.paramFormat);
+        Log.w("whl", netRequest.url);
+        Log.w("whl", "param=" + netRequest.paramFormat);
 //        ReqManager.getInstance().notifyListener(netRequest.requestTag, ReqManager.ReqStatus.loading);
         VolleyControl.getInstance().post(
                 netRequest.reqMethod,
@@ -28,7 +26,7 @@ public class NetControl {
                 new VolleyControl.Listener() {
                     @Override
                     public void onComplete(String response, Exception error) {
-                        Log.w("lz1", netRequest.action + " code=" + netResponse.statusCode, error);
+                        Log.w("whl", netRequest.action + " code=" + netResponse.statusCode, error);
                         if (netRequest.listener != null) {
                             netResponse.netRequest = netRequest;
                             netResponse.respOrigin = response;

@@ -10,9 +10,6 @@ import framework.org.apache.commons.codec.binary.Hex;
 import framework.org.apache.commons.codec.digest.DigestUtils;
 
 
-/**
- * Created by lizeng on 16/2/15.
- */
 public class NetRequest {
 
     public static final int REQ_METHOD_GET = Request.Method.GET;
